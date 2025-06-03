@@ -1,0 +1,112 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+  /* 🔹 Video Section */
+  .video-section {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .video-section video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    z-index: 0;
+  }
+  
+  .video-overlay {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: left;
+    top: 60%;
+    transform: translateY(-50%);
+    padding-left: 8vw;   /* 👈 Adjust this value to shift right */
+    padding-right: 2vw;
+    max-width: 600px;
+  }
+  
+  
+  .video-overlay h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px 10px black;
+  }
+  
+  .video-overlay p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 10px black;
+  }
+  
+  #enter-btn {
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #enter-btn:hover {
+    background-color: #ddd;
+  }
+  
+  /* 🔸 Portfolio Section */
+  .portfolio-section {
+    background: white;
+    padding: 4rem 2rem;
+    min-height: 100vh;
+  }
+  
+  .portfolio-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .tab-nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .tab-btn {
+    padding: 0.5rem 1.5rem;
+    border: 1px solid black;
+    background: none;
+    cursor: pointer;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  
+  .tab-btn.active,
+  .tab-btn:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  .tab-content {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  
